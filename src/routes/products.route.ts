@@ -4,6 +4,8 @@ import {createProduct, deleteProduct, getProduct, getProducts, updateProduct} fr
 
 const router = Router();
 
+// http://localhost:3000/api/products/
+
 router.get('/', getProducts)
 router.get('/', getProduct)
 router.post('/', createProduct);
