@@ -31,15 +31,15 @@ app.use('/api', routeMain );
 
 
 //  Resolvemos la promesa: Conexion a Mongo usando Mongoose
-// db()
-//     .then(() => {
-//         console.log(`MongoDB se conecto correctamente`);
+db()
+    .then(() => {
+        console.log(`MongoDB se conecto correctamente`);
         
-//     })
-//     .catch(() => {
-//         console.log(`MongoDB tiene un problema de conexion`);
+    })
+    .catch(() => {
+        console.log(`MongoDB tiene un problema de conexion`);
         
-//     })
+    })
 
 app.listen(PORT, () => {
     console.log(`Servidor en http:localhost:${PORT}`); 
