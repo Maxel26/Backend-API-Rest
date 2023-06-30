@@ -1,7 +1,7 @@
 // Archivo central de enrutamiento 
 import {Router, Request , Response} from 'express'
-import routeUsers from "./users";
-import rousteProducts from "./products";
+import routeUsers from "./users.route";
+import rousteProducts from "./products.route";
 
 const router = Router();
 
