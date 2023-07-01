@@ -25,6 +25,9 @@ app.get('/home', (req : Request, res : Response) => {
     res.send(`<h1> ${namepage}</h1>`);
 })
 
+// implementando Middlewares a Express
+app.use(express.json());
+
 // Middleware
 // http://localhost:3000/api
 app.use('/api', routeMain );
